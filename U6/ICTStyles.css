@@ -1,0 +1,49 @@
+﻿h1 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #e69138;
+}
+
+h2 {
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #93c47d;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #000000;
+    text-align: justify;
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+a {
+    color: #93c47d;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #a1b796;
+}
+
+a:hover {
+    color: #9cf176;
+}
+
+.logo {
+    width: 175px;
+    height: 175px;
+    float: left;
+    margin-right: 20px;
+}
+
+.banner {
+    float: right;
+}
