@@ -1,0 +1,140 @@
+<html>
+<head>
+	<title>ICT Solutions</title>
+<link rel="icon" type="image/ico" href="images/ICTFavicon.ico">
+<link href="ICTStyles.css" rel="stylesheet" type"text/css">
+<body>
+  <header>
+  
+  <img src="images/ICTSolutionsLogo.png" alt="ICT Solutions Logo" class="logo">
+  <class="banner">
+  <img src="images/banner.png" alt="ICT Solutions Logo">
+  
+  
+  <h1>ICT Solutions</h1>
+    <nav>
+      <ul>     
+      <a href="index.htm">ICT Solutions</a> | 
+      <a href="existingwebdevs.htm">Meet The Team</a> | 
+      <a href="jobspecs.htm">What We Need From You</a> | 
+      <a href="applicationform.htm">Apply Now</a> | 
+      <a href="webcourses.htm">Take Your Step Into Web Development</a> |
+      </ul>
+    </nav>
+  </header>
+ </body>
+ 
+<body>
+	<div id="welcomeMessage"></div>
+
+	<script>
+    // Get the current hour
+    var hour = new Date().getHours();
+    
+    // Define the messages based on the time of the day
+    var messages = {
+        morning: "Good morning!",
+        afternoon: "Good afternoon!",
+        evening: "Good evening!",
+        night: "Good night!"
+    };
+    
+    // Set the welcome message based on the time of the day
+    var welcomeMessage;
+    if (hour >= 5 && hour < 12) {
+        welcomeMessage = messages.morning;
+    } else if (hour >= 12 && hour < 18) {
+        welcomeMessage = messages.afternoon;
+    } else if (hour >= 18 && hour < 22) {
+        welcomeMessage = messages.evening;
+    } else {
+        welcomeMessage = messages.night;
+    }
+    
+    // Display the welcome message
+    document.getElementById("welcomeMessage").innerHTML = "<h1>" + welcomeMessage + "</h1>";
+	</script>
+	
+	<title>Scrolling Image Slideshow</title>
+<style>
+
+    .slideshow-container {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        border: 1px solid #f2f2f2; 
+    }
+
+  
+    .mySlides {
+        display: none;
+    }
+
+
+    .mySlides img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 3s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="images/tech1.png" alt="an image of pc hardware in a office">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/tech2.png" alt="an image of pc hardware">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/tech3.png" alt="an image of hardware on a desk">
+    </div>
+</div>
+<br>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 3000);
+    }
+</script>
+	<section>
+	<style>
+	 p {text-align: center;}
+	 </style>
+    <p> Welcome to ICT Solutions - Your Gateway to Web Development!</p>
+	<div>
+	<p>At ICT Solutions, we are more than a team. We are a family of passionate and talented web developers dedicated to crafting exceptional online experiences. As we continue to grow, we are actively seeking new members to join our dynamic team. If you have a knack for turning innovative ideas into captivating digital realities, we want you! Join us at ICT Solutions and let's shape the future of the web together.</p>
+	
+	</section>
+</body>
+</html>
